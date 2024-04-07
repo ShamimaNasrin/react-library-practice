@@ -5,7 +5,6 @@ import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import CustomTwo from './components/CustomTwo';
 import D3OrgTestOne from './components/D3OrgTestOne';
 import RootNode from './components/RootNode';
-import D3TreeTestOne from './components/D3TreeTestOne';
 import { useState } from 'react';
 
 function App() {
@@ -42,8 +41,6 @@ function App() {
         >Word Cloud</button>
       </div>
 
-      {/* <TestOne></TestOne> */}
-      {/* <FlowTwo></FlowTwo> */}
       {/* {
         data?.map((d, i) => <RootNode key={i} data={d}></RootNode>)
       } */}
@@ -53,9 +50,6 @@ function App() {
       {title === 'Tree3' && <TestOne data={treeData} />}
       {title === 'Word' && <TestOne data={treeData} />}
 
-
-
-      {/* <D3TreeTestOne ></D3TreeTestOne> */}
 
     </div>
   );
