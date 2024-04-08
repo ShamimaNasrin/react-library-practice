@@ -6,6 +6,7 @@ import CustomTwo from './components/CustomTwo';
 import D3OrgTestOne from './components/D3OrgTestOne';
 import RootNode from './components/RootNode';
 import { useState } from 'react';
+import ReactWordCloud from './components/WordCloud/ReactWordCloud';
 
 function App() {
   const [title, setTitle] = useState('Tree1');
@@ -48,7 +49,7 @@ function App() {
       {title === 'Tree1' && <D3OrgTestOne data={treeData} />}
       {title === 'Tree2' && <FlowTwo data={treeData} />}
       {title === 'Tree3' && <TestOne data={treeData} />}
-      {title === 'Word' && <TestOne data={treeData} />}
+      {title === 'Word' && <ReactWordCloud />}
 
 
     </div>
