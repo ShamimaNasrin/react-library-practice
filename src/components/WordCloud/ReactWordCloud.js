@@ -69,7 +69,7 @@ const ReactWordCloud = () => {
                     // schemeCategory10ScaleOrdinal(i)
                 }
                 onWordClick={(event, d) => {
-                    console.log(`onWordClick:`, d);
+                    console.log(`onWordClick:`, d.text);
                 }}
             // onWordMouseOver={(event, d) => {
             //     console.log(`onWordMouseOver: ${d.text}`);

@@ -7,6 +7,8 @@ import D3OrgTestOne from './components/D3OrgTestOne';
 import RootNode from './components/RootNode';
 import { useState } from 'react';
 import ReactWordCloud from './components/WordCloud/ReactWordCloud';
+import NavBarTest from './components/NavBar/NavBarTest';
+import RichTextEditor from './components/RichText/RichTextEditor';
 
 function App() {
   const [title, setTitle] = useState('Tree1');
@@ -25,7 +27,7 @@ function App() {
 
 
   return (
-    <div className="border w-100 p-5">
+    <div className="border w-100 h-100 p-5">
 
       <div className='d-flex gap-1'>
         <button className='btn btn-primary'
@@ -40,6 +42,13 @@ function App() {
         <button className='btn btn-primary'
           onClick={() => setTitle('Word')}
         >Word Cloud</button>
+        <button className='btn btn-primary'
+          onClick={() => setTitle('navbar')}
+        >navbar</button>
+
+        <button className='btn btn-primary'
+          onClick={() => setTitle('richText')}
+        >Rich text</button>
       </div>
 
       {/* {
@@ -50,6 +59,9 @@ function App() {
       {title === 'Tree2' && <FlowTwo data={treeData} />}
       {title === 'Tree3' && <TestOne data={treeData} />}
       {title === 'Word' && <ReactWordCloud />}
+      {title === 'navbar' && <NavBarTest />}
+      {title === 'richText' && <RichTextEditor />}
+      
 
 
     </div>
